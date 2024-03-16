@@ -1,0 +1,13 @@
+{
+    "name": "email_worker_parser",
+    "version": "0.0.0",
+    "devDependencies": {
+        "postal-mime": "^2.1.2",
+        "wrangler": "3.0.1"
+    },
+    "private": true,
+    "scripts": {
+        "start": "wrangler dev",
+        "deploy": "wrangler publish"
+    }
+}

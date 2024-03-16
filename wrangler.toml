@@ -1,0 +1,12 @@
+name = "temp-email"
+main = "src/index.js"
+compatibility_date = "2022-12-05"
+usage_model = "unbound"
+kv_namespaces = [
+    { binding = "INBOXES", id = "eac7b9e40f83425f866d8ab4ceb37270"}
+]
+
+[vars]
+FORWARD_EMAIL = ""
+EMAIL_DOMAIN = "snailbox.live"
+EMAIL_TIMEOUT = 86400
