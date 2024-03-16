@@ -7,6 +7,4 @@ kv_namespaces = [
 ]
 
 [vars]
-FORWARD_EMAIL = ""
-EMAIL_DOMAIN = "snailbox.live"
 EMAIL_TIMEOUT = 86400
