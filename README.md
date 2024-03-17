@@ -1,8 +1,14 @@
 # Cloudflare Temporary Email Service
 
+![Page Demo](https://i.hcampbell.dev/yz55oj8lfw.png)
+
 This project utilises Cloudflare's workers and KV storage to provide a temporary email service. For most use-cases, this should be able to operate within the free tier allowance.
 
 All emails received are stored in a KV storage object and are publicly accessible if the email address is known.
+
+# Demo
+
+A live version of this project can be found at https://temp-email.hcampbell.workers.dev/
 
 # Installation
 
