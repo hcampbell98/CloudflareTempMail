@@ -83,15 +83,13 @@ export default {
                                     "</div></div>"
                             )
                             .join("");
-                    })
-                    .then(() => {
+
                         document.querySelectorAll(".email").forEach((email) => {
                             email.addEventListener("click", () => {
                                 email.querySelector(".content").style.display = email.querySelector(".content").style.display === "none" ? "block" : "none";
                             });
                         });
                     });
-
                 document.querySelector("img").style.display = "block";
             }
 
@@ -268,6 +266,7 @@ export default {
         </style>
     </body>
 </html>
+
 
                 `;
                 return new Response(html, { headers: { "content-type": "text/html" } });
