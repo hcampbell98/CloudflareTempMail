@@ -72,7 +72,16 @@ export default {
                         }
 
                         document.querySelector(".inbox").innerHTML = data
-                            .map((email) => '<div class="email"><div>' + email.date + "</div><div>" + email.subject + '</div><div class="content" style="display: none">' + email.html + "</div></div>")
+                            .map(
+                                (email) =>
+                                    "<div class='email'><div style='pointer-events: none'>" +
+                                    email.date +
+                                    "</div><div style='pointer-events: none'>" +
+                                    email.subject +
+                                    '</div><div class="content" style="display: none">' +
+                                    email.html +
+                                    "</div></div>"
+                            )
                             .join("");
                     })
                     .then(() => {
@@ -259,6 +268,7 @@ export default {
         </style>
     </body>
 </html>
+
                 `;
                 return new Response(html, { headers: { "content-type": "text/html" } });
             case "inbox":
