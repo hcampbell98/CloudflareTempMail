@@ -20,4 +20,6 @@ Configure the environment variables within the `wrangler.toml` file before insta
 
 Create a KV namespace using `wrangler kv:namespace create Inboxes` and copy the output into the `wrangler.toml` file. Update `<YOUR_BINDING>` to `INBOXES`.
 
-Run `npx install` to initialise the project and then `npx wrangler deploy` to publish the service.
+Run `npx install` to initialise the project and then `npx wrangler deploy` to publish the worker.
+
+Set up Email Routing in the Cloudflare dashboard, setting a catch-all rule to send all mail to your newly created worker.
