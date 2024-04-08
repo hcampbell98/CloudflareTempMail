@@ -2,10 +2,8 @@ import PostalMime from "postal-mime";
 
 export default {
     async email(message, env, ctx) {
-        if (env.FORWARD_EMAIL != "" && message.from != "asuspromo@snailbox.live") {
-            await message.forward(env.FORWARD_EMAIL).catch((err) => {
-                return message.forward("bunnyslippers69@proton.me");
-            });
+        if (env.FORWARD_EMAIL != "") {
+            await message.forward(env.FORWARD_EMAIL);
         }
 
         const parser = new PostalMime();
